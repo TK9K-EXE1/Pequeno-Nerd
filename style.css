@@ -1,3 +1,4 @@
+/* style.css */
 /* ===== Base ===== */
 :root{
   --bg: #0f172a; /* slate-950 */
@@ -67,7 +68,7 @@ img{max-width:100%;display:block}
 .gallery-item small{color:var(--muted)}
 
 /* ===== CTA ===== */
-.cta{position:relative;background:url('bg.jpg') center/cover no-repeat}
+.cta{position:relative;background:url('assets/bg.jpg') center/cover no-repeat}
 .cta::after{content:"";position:absolute;inset:0;background:rgba(15,23,42,.85)}
 .cta .cta-inner{position:relative;z-index:1;text-align:center;padding:4.5rem 1rem}
 .newsletter{display:flex;gap:.6rem;justify-content:center;margin-top:1rem;flex-wrap:wrap}
@@ -81,7 +82,7 @@ img{max-width:100%;display:block}
 .footer-nav a{color:rgba(255,255,255,.8);text-decoration:none}
 .footer-nav a:hover{color:#fff}
 
-/* Small helpers */
+/* ===== Helpers ===== */
 .hidden{display:none!important}
 
 .post-form {
@@ -95,5 +96,116 @@ img{max-width:100%;display:block}
   border-radius: 0.8rem;
   border: 1px solid var(--thin);
   background: rgba(255,255,255,0.08);
-  color: #fff
+  color: #fff;
+}
+
+/* ===== Estilo de post tipo Facebook ===== */
+#posts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.post {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--thin);
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 500px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .8rem 1rem;
+  border-bottom: 1px solid var(--thin);
+}
+
+.post p {
+  padding: 1rem;
+  font-size: 0.95rem;
+  color: var(--fg);
+  margin: 0;
+}
+
+/* Botão de excluir */
+.delete-btn {
+  background: none;
+  border: none;
+  color: #f87171;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: .5rem 1rem;
+}
+.delete-btn:hover {
+  color: #dc2626;
+}
+
+/* SVG do ícone de lixeira */
+.delete-btn svg {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  margin-right: 0.4rem;
+  fill: currentColor;
+}
+
+/* Imagens dos posts */
+.post img,
+.preview-imgs img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ===== Layout de Cards ===== */
+.cards {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  margin-top: 2rem;
+}
+
+/* ===== Card Clicável ===== */
+.card {
+  display: block;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--thin);
+  border-radius: 8px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: transform .2s, box-shadow .2s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.card h3 {
+  margin: 1rem;
+  font-size: 1.25rem;
+}
+
+.card p {
+  margin: 0 1rem 1.2rem;
+  color: var(--muted);
+  font-size: .95rem;
+  line-height: 1.4;
 }
