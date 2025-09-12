@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pequeno Nerd</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="#inicio" class="brand" aria-label="Pequeno Nerd — Início">
+        <img src="/bg.jpg" alt="Logo Pequeno Nerd" class="logo-img" />
+        <strong>Pequeno <span class="accent">Nerd</span></strong>
+      </a>
+      <button class="nav-toggle" aria-label="Abrir menu">☰</button>
+      <nav class="site-nav" id="siteNav">
+        <a href="#inicio">Início</a>
+        <a href="#recursos">Seja um parceiro</a>
+        <a href="#galeria">Postagens</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="inicio" class="hero">
+      <div class="content">
+        <p class="eyebrow">Bem-vindo ao universo</p>
+        <h1>Pequeno Nerd</h1>
+        <p class="subtitle">florestas profundas, mochilas pesadas e um coração gigante.</p>
+        <div class="buttons">
+          <a class="btn" href="#cta">Começar Agora</a>
+          <a class="btn secondary" href="#galeria">Ver Galeria</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards de Postagens -->
+    <section id="galeria" class="section">
+      <div class="container">
+        <h2>Postagens</h2>
+        <div class="cards">
+          <div class="card" data-href="posts/espadachinsonepiece.html">
+            <img src="/posts/espadachinsonepiece/espachins.jpg" alt="Pessoa caminhando na floresta">
+            <h3>Quais são os espadachins de elite em One Piece?</h3>
+            <p>O mundo de One Piece abriga muitos espadachins poderosos. Assim que o caçador de piratas Roronoa Zoro se juntou aos Piratas do Chapéu de Palha, a esgrima se tornou uma parte importante da longa série. Em cada arco, os protagonistas de One Piece encontram novos espadachins que podem realizar feitos incríveis graças a uma mistura de Haki e poderes relacionados à Akuma no Mi. Embora alguns confiem mais nos poderes da Akuma no Mi do que na esgrima, também não faltam aqueles com grandes habilidades com a espada.</p>
+          </div>
+
+          <div class="card" data-href="posts\temerousertemido.html">
+            <img src="posts\temerousertemido\bg.jpg" alt="Lua cheia sobre árvores">
+            <h3>Temer ou ser temido</h3>
+            <p>Personagens de anime temidos por quase todos ao seu redor possuem uma aura única, que os diferencia de indivíduos menos conhecidos que não possuem tal influência. A maioria desses personagens conquistou o direito de ser temida devido à sua força incrível, mas outros inspiram medo simplesmente pelo poder de sua posição. É claro que personagens naturalmente temidos por suas capacidades são muito mais atraentes e carismáticos do que aqueles que simplesmente se aproveitam de sua posição. O aspecto fundamental desses personagens aterrorizantes é a confiança absoluta que eles transmitem, cativando os espectadores com uma presença inesquecível que exala poder e domínio.</p>
+          </div>
+
+          <div class="card" data-href="posts/post3.html">
+            <img src="posts/survival.jpg" alt="Equipamentos de sobrevivência">
+            <h3>Kit de Sobrevivência Essencial</h3>
+            <p>Os itens que não podem faltar na sua mochila.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta" class="cta">
+      <div class="cta-inner">
+        <h2>Entre para a jornada</h2>
+        <p>Baixe o jogo, participe do Discord e torne-se um verdadeiro <span class="accent bold">Survivor</span>.</p>
+        <form id="newsletter" class="newsletter" novalidate>
+          <input type="email" id="email" placeholder="Seu melhor e-mail" required />
+          <button class="btn" type="submit">Quero novidades</button>
+        </form>
+        <p class="muted">Sem spam. Você pode sair quando quiser.</p>
+      </div>
+    </section>
+
+    <!-- Recursos -->
+    <section id="recursos" class="section">
+      <div class="container">
+        <h2>Seja um parceiro</h2>
+        <p>contatopequenonerd@gmail.com</p>
+        <div class="features">
+          <article class="feature">
+            <img src="PS.png" alt="Logo Parceiro" class="logo-parceiro">
+            <h3>PS Tecnologia</h3>
+            <p>*Parceiro* Precisando de um site para seu negócio, conte com a gente!!</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Pequeno Nerd — Todos os direitos reservados.</small>
+      <nav class="footer-nav">
+        <a href="#">Termos</a>
+        <a href="#">Privacidade</a>
+        <a href="#">Contato</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
