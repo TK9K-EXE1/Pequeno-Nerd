@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Login</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <h1 class="title">🔐 Login</h1>
+      <form id="loginForm">
+        <input type="text" id="username" placeholder="Usuário" required>
+        <input type="password" id="password" placeholder="Senha" required>
+        <button type="submit" class="btn">Entrar</button>
+      </form>
+      <p class="links">
+        Esqueceu a senha? <a href="#">Clique aqui</a>
+      </p>
+      <hr>
+      <button id="registerBtn" class="btn secondary">Registrar-se</button>
+    </div>
+  </div>
+
+  <script src="/login/login.js"></script>
+</body>
+</html>
